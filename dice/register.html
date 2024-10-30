@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/d20.png" width="48" height="48">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="board-games.html">board games</a></li>
+                                <li><a class="dropdown-item" href="trading-cards.html">trading cards</a></li>
+                                <li><a class="dropdown-item" href="collectables.html">collectables</a></li>
+                                <li><a class="dropdown-item" href="puzzles.html">puzzles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-sm">
+        <div class="content">
+            <p>register</p>
+            <div>
+                <div id="error" class="text-danger"></div>
+                <form id="form" class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="inputGivenName" class="form-label">given name</label>
+                        <input type="text" class="form-control" id="inputGivenName" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputMiddleName" class="form-label">middle name</label>
+                        <input type="text" class="form-control" id="inputMiddleName" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputSurnameOfFather" class="form-label">surname of father</label>
+                        <input type="text" class="form-control" id="inputSurnameOfFather" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputSurnameOfMother" class="form-label">surname of mother</label>
+                        <input type="text" class="form-control" id="inputSurnameOfMother" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputUsername" class="form-label">username</label>
+                        <input type="text" class="form-control" id="inputUsername" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputEmailAddress" class="form-label">email address</label>
+                        <input type="email" class="form-control" id="inputEmailAddress" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputPassword" class="form-label">password</label>
+                        <input type="password" class="form-control" id="inputPassword" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputConfirmPassword" class="form-label">confirm password</label>
+                        <input type="password" class="form-control" id="inputConfirmPassword" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputDateOfBirth" class="form-label">date of birth</label>
+                        <input type="date" class="form-control" id="inputDateOfBirth" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputShippingAddress" class="form-label">shipping address</label>
+                        <textarea class="form-control" id="inputShippingAddress" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">submit</button>
+                        <button type="reset" class="btn btn-danger">reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

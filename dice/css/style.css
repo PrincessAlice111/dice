@@ -7,12 +7,6 @@
     --blue-900: #031633;
 }
 
-/* Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 /* General */
 body {
     font-family: sans-serif;
@@ -20,56 +14,28 @@ body {
 
 /* Header */
 header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
     background-color: var(--blue-500);
-    padding: 0.5rem;
 }
 
-#logo {
-    height: 3rem;
-}
-
-#logo img {
+header img {
     filter: invert(100%);
-    height: inherit;
 }
 
-nav ul {
-    padding: 0;
-    font-size: 0;
-    list-style-type: none;
-}
-
-nav li {
-    display: inline-flex;
-}
-
-nav a {
-    padding: 1rem 0.5rem;
+.nav-link {
     color: white;
-    font-size: 1rem;
-    text-decoration: none;
 }
 
-nav a:hover {
+.nav-link:focus,
+.nav-link:hover {
     background-color: var(--blue-600);
+    color: white;
+}
+
+.navbar-nav .nav-link.show {
+    color: white;
 }
 
 /* Main */
-main {
-    margin-right: auto;
-    margin-left: auto;
-    width: 75vw;
-}
-
-@media (max-width: 576px) {
-    main {
-        width: 100%;
-    }
-}
-
 .banner {
     display: flex;
     justify-content: center;
@@ -80,7 +46,8 @@ main {
     height: 50vh;
 }
 
-.banner p {
+.banner>p {
+    margin: auto;
     font-size: 3rem;
     text-align: center;
 }
@@ -89,54 +56,14 @@ main {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 576px) {
-    .products {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-}
-
 .products>p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-.products>div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-}
-
-@media (max-width: 576px) {
-    .products>div {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.card {
-    background-color: var(--blue-100);
-    padding: 1rem;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card-title {
-    font-size: 1.25rem;
-}
-
 .content {
     margin-bottom: 1rem;
-}
-
-@media (max-width: 576px) {
-    .content {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
 }
 
 .content>p {
